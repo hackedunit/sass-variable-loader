@@ -18,7 +18,7 @@ function replacer(key, value) {
   if (isNaN(value)) {
     return value;
   }
-  return parseInt(value, 10);
+  return parseFloat(value);
 }
 
 module.exports = function sassVariableLoader(content) {
